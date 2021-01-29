@@ -17,6 +17,7 @@ export interface MatProgressButtonOptions {
   value?: number;
   fullWidth?: boolean;
   disabled?: boolean;
+  enabledWhenActive?: boolean;
   icon?: MatProgressButtonIcon;
   type?: string;
   customClass?: string;
