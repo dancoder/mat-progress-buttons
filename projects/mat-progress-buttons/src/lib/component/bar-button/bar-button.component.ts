@@ -14,7 +14,7 @@ export class MatBarButtonComponent implements OnChanges {
   @Output() btnClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
   @HostListener('click', ['$event'])
   public onClick(event: MouseEvent) {
-    if (!this.options.disabled && !this.options.active) {
+    if (!this.options.disabled && (!this.options.active || this.options.enabledWhenActive)) {
       this.btnClick.emit(event);
     }
   }

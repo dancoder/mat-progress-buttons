@@ -32,6 +32,9 @@
       &.active {
         opacity: 0;
       }
+      &.active-enabled {
+        opacity: 0.75;
+      }
     }
     mat-icon.mat-button-icon {
       padding-right: 5px;
@@ -43,6 +46,9 @@
       }
       &.active {
         opacity: 0;
+      }
+      &.active-enabled {
+        opacity: 0.75;
       }
     }
   }

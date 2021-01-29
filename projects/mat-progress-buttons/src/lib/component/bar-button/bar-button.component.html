@@ -1,13 +1,13 @@
 <button mat-button
   [type]="options.type"
   [color]="options.buttonColor"
-  [class.active]="options.active"
+  [class.active]="options.active && !options.enabledWhenActive"
   [class.mat-raised-button]="options.raised"
   [class.mat-stroked-button]="options.stroked"
   [class.mat-flat-button]="options.flat"
   [class.fullWidth]="options.fullWidth"
   [ngClass]="options.customClass"
-  [disabled]="options.active || options.disabled">
+  [disabled]="options.active && !options.enabledWhenActive || options.disabled">
 
   <ng-container
     *ngIf="options.buttonIcon">
